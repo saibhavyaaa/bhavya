@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c1ab5f16d.js" crossorigin="anonymous"></script>
+    <title>Relationships and Emotional Well-being</title>
+    <style>
+        .bg-container{
+            background-image: url("https://i.pinimg.com/736x/20/a9/67/20a96751c91dd9852a050d222a341cfd.jpg");
+            background-size: cover;
+            height: 100vh;
+        }
+        .heading {
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 5px;
+            color:black;
+        }
+        .verse {
+            margin: 15px;
+        }
+        .translation {
+            margin: 15px;
+            font-weight:lighter;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .text-container {
+            background-color: rgba(241, 217, 198, 0.914);
+            border-radius: 10px;
+            border-width: px;
+            border-style: solid;
+            border-color: black;
+            margin: 12px;
+            padding: 10px;
+        }
+        .button {
+            background-color: blanchedalmond;
+            margin: 15px;
+            border-radius: 5px;
+            border-width: 1px;
+            border-style: solid;
+            border-color:black;
+        }
+        /* NAVBAR STYLING */
+    nav {
+      position: fixed; /* Add this */
+      top: 0; /* Add this */
+      left: 0; /* Add this */
+      width: 100%; /* Add this */
+      z-index: 1; /* Add this to ensure navbar is on top of other elements */
+      background-color: rgb(219, 155, 71);
+      padding: 0px;
+      text-align: center;
+      overflow: hidden;
+      margin: 0; 
+    }
+
+    /* Unordered list styles */
+    .Unordered-list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Navbar links */
+    ul li {
+      position: relative;
+    }
+
+    ul li a {
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Hover effect for links */
+    ul li a:hover {
+      color: black;
+    }
+    .navbar-dropdown {
+            margin-top: 30px;
+            margin-bottom: 20px; /* Push it down below the fixed navbar */
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-color: rgb(225, 184, 131);
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            height:fit-content;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width:max-content;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ecd397;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .lines {
+          color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="Unordered-list">
+          <li><a href="ino_gita.html">Home</a></li>
+          <li><a href="gita_contents.html">Contents</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    <div class="bg-container" style="padding:20px;margin-top:40px;">
+        <div class="navbar-dropdown">
+            <div class="dropdown">
+    
+                <button class="dropdown-button">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="mental_health.html">1. Mental Health and Stress Management</a>
+                    <a href="decision.html">2. Decision Making and Leadership</a>
+                    <a href="work_life.html">3. Work-Life Balance and Career</a>
+                    <a href="growth.html">4. Personal Growth and Self-Realization</a>
+                    <a href="fear.html">5. Overcoming Fear and Doubt</a>
+                    <a href="relationship.html">6. Relationships and Emotional Well-being</a>
+                    <a href="meditation.html">7. Spiritual Growth and Meditation</a>
+                    <a href="ethics.html">8. Ethics and Morality</a>
+                    <a href="purpose.html">9. Living with Purpose</a>
+                    <a href="manage.html">10. Managing Materialism and Detachment</a>
+                </div>
+          </div>
+        </div>
+        <h1 class="heading">6. RELATIONSHIP AND EMOTIONAL WELL-BEING</h1>
+        <h2 class="heading">Gita Teaching: Detachment in Relationships (Chapter 6, Verse 5)</h2>
+        <div class="text-container">
+            <h4 class="verse">
+                Verse: <br>
+                uddhared ātmanātmānaṁ nātmānam avasādayet<br>ātmaiva hyātmano bandhur ātmaiva ripur ātmanaḥ
+            <h4>
+            <p class="translation">
+                Translation: <br>
+                Elevate yourself through the power of your mind, and not degrade yourself, 
+                for the mind can be the friend and also the enemy of the self.
+            </p>
+        <div class="d-flex flex-container justify-content-end">
+        <button type="button" class="button" data-toggle="modal" data-target="#exampleModal" >
+            Modern Application
+          </button>
+        </div>
+          <div class="modal fad" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modern Application</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Balancing Love, Care, and Emotional Independence</h3>
+                    <div style="font-weight: lighter;">
+                    <p>
+                        In today’s world, relationships often come with intense emotional attachments, leading to dependency, possessiveness, 
+                        and unhealthy boundaries. The Gita’s teaching on detachment encourages individuals to approach relationships with love, 
+                        compassion, and care, but without clinging to or controlling others. This form of detached love allows for greater freedom, 
+                        respect, and mutual understanding within relationships. <br>
+                        Detachment here means being able to love others without attaching your sense of self-worth or happiness to their actions or 
+                        responses. It’s about caring deeply but maintaining enough emotional independence to remain grounded, even when challenges arise.
+                        <ul>
+                            <li>
+                                <span style="font-weight: bold;">Detachment Doesn’t Mean Apathy</span>
+                                <p>
+                                    Krishna’s teaching on detachment often gets misunderstood as a call for indifference. However, it’s important to clarify that 
+                                    detachment, as per the Gita, is about avoiding possessiveness and emotional dependence, not apathy or neglect.
+                                    In relationships, detachment allows individuals to care deeply for others without losing themselves in the process. This leads
+                                     to healthier emotional boundaries, where love and compassion flow freely, but without unhealthy dependency. You can be present and 
+                                     supportive without letting another person’s actions dictate your emotional state.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Attachment vs. Detachment: Understanding the Difference</span>
+                                <h5>Attachment:</h5>
+                                <p> In many relationships, attachment manifests as possessiveness or control, where one person’s happiness depends on the other’s actions. 
+                                    This can lead to insecurity, jealousy, and fear of losing the other person, ultimately causing strain and conflict.
+                                </p>
+                                <h5>Detachment:</h5>
+                                <p> On the other hand, detachment means loving someone without clinging to them for validation or security. This kind of love allows for greater 
+                                    freedom and respect within the relationship. It creates space for both individuals to grow, while still being supportive and compassionate toward one another.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Emotional Independence in Relationships</span>
+                                <h5>Emotional Well-Being:</h5>
+                                <p>The Gita teaches that true well-being comes from within, not from external sources. When individuals depend on others for emotional stability, they place unrealistic 
+                                    expectations on their relationships, leading to disappointment and frustration. Emotional independence is about finding contentment within oneself while still nurturing loving connections with others.</p>
+                                <h5>Affirmations and Positive Visualization:</h5>
+                                <p> By practicing positive affirmations, individuals can rewire their thought patterns, replacing negative self-talk with empowering beliefs. Visualizing success, courage,
+                                     and positive outcomes reinforces confidence and helps reduce fear-driven thinking.
+                                </p>
+                                <h5>Modern Relevance:</h5>
+                                <p>In personal relationships, especially romantic ones, emotional independence helps prevent co-dependency. It allows both partners to support each other without losing their sense of identity or relying on 
+                                    the other person for constant emotional fulfillment. This independence fosters deeper, more authentic connections, as each person can give and receive love freely, without neediness or fear.</p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Practicing Detachment and Compassion</span>
+                                <h5>Mindful Communication:</h5>
+                                <p> Practicing detachment in relationships begins with clear, open, and compassionate communication. When both individuals feel understood and respected, it becomes easier to detach from 
+                                    controlling or possessive tendencies. Mindful listening and responding without judgment can strengthen emotional bonds while maintaining healthy boundaries.</p>
+                                <h5>Empathy without Attachment:</h5>
+                                <p>  Compassion in relationships means empathizing with others’ emotions without absorbing them. Detachment doesn’t mean ignoring others' feelings, but rather supporting them while maintaining your own emotional 
+                                    balance. This allows individuals to be there for their loved 
+                                    ones during tough times without being overwhelmed by their emotional struggles.
+                                </p>
+                                <h5>Techniques for Detachment:</h5>
+                                <p> Regular self-reflection and meditation can help cultivate emotional independence. By observing your emotions and reactions, you can recognize when attachment starts to affect your well-being and gently 
+                                    guide yourself back to a state of balanced, detached love.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Healthier Boundaries for Deeper Connection</span>
+                                <h5>Boundary Setting:</h5>
+                                <p>Detachment naturally leads to healthier boundaries in relationships. By understanding where your emotions end and the other person’s begin, you can avoid enmeshment—where the emotional well-being of one person is tied up with the other’s.</p>
+                                <h5>Long-Term Benefits:</h5>
+                                <p> Relationships based on detachment and compassion tend to be stronger and more resilient over time. Without the weight of attachment, both individuals can grow and evolve without feeling restricted by the relationship. This fosters mutual respect and a deeper 
+                                    emotional connection, as both partners are free to be their true selves.
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="button" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowLeft") {
+                window.location.href = "fear.html";
+            } else if (event.key === "ArrowRight") {
+                window.location.href = "meditation.html";
+            }
+        });
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdown");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

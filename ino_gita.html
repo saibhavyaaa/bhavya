@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7l" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: rgb(193, 163, 91);
+            background-image: url(https://i.pinimg.com/originals/70/85/94/70859438216e9a4eac7086cdf705fa7d.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* NAVBAR STYLING */
+        nav {
+        position: fixed; /* Add this */
+        top: 0; /* Add this */
+        left: 0; /* Add this */
+        width: 100%; /* Add this */
+        z-index: 1; /* Add this to ensure navbar is on top of other elements */
+        background-color: rgb(219, 155, 71);
+        padding: 0px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0; 
+        }
+
+        /* Unordered list styles */
+        .Unordered-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        }
+
+        /* Navbar links */
+        ul li {
+        position: relative;
+        }
+
+        ul li a {
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        }
+
+        /* Hover effect for links */
+        ul li a:hover {
+        color: black;
+        }
+
+        /* Floating flashcards combined into a carousel */
+        .carousel-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 600px;
+            z-index: 1000;
+            padding: 20px;
+        }
+
+        .carousel-item {
+            padding: 20px;
+            background-color: blanchedalmond;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .carousel-item h4 {
+            margin-bottom: 20px;
+        }
+
+        .carousel-item p {
+            margin: 0;
+        }
+
+        /* Custom Carousel Control Buttons */
+        /* Styling the buttons */
+        .carousel-control-prev, .carousel-control-next {
+            width: 60px;            /* Set the button width */
+            height: 60px;           /* Set the button height */
+            background-color: #c48011;  /* Green background */
+            border-radius: 50%;     /* Circular shape */
+            /* White border for visibility */
+            display: flex;          /* Center the icon inside */
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+            position: absolute;     /* Absolute positioning for vertical alignment */
+            top: 50%;               /* Vertically center the button */
+            transform: translateY(-50%); /* Adjust to perfectly center */
+            z-index: 10;            /* Ensure the buttons stay above the carousel content */
+        }
+
+        /* Change the background color on hover */
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+            background-color: #a46102; /* Darker green on hover */
+        }
+
+        /* Styling the icons */
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-image: none;    /* Remove the default icon */
+            width: 30px;               /* Custom size for the icon */
+            height: 30px;
+            background-color: #fff;    /* White background for the icon */
+            mask-image: url('https://img.icons8.com/ios-filled/50/000000/chevron-left.png'); /* Custom icon */
+            mask-size: cover;
+        }
+
+        .carousel-control-next-icon {
+            mask-image: url('https://img.icons8.com/ios-filled/50/000000/chevron-right.png'); /* Custom icon for next */
+        }
+
+        /* Adjust icon positioning inside the buttons */
+        .carousel-control-prev {
+            left: -80px;   /* Move the button outside the carousel */
+        }
+
+        .carousel-control-next {
+            right: -80px;  /* Move the button outside the carousel */
+        }
+
+
+
+        /* Responsive flashcard size */
+        @media (max-width: 900px) {
+            .carousel-container {
+                width: 100%;
+                padding: 0;
+                height:max-content;
+            }
+
+            .carousel-item {
+                padding: 10px;
+            }
+
+            .carousel-control-prev, .carousel-control-next {
+                width: 0px;
+                height: 40px;
+                padding: 10px;
+            }
+
+            .carousel-control-prev-icon, .carousel-control-next-icon {
+                width: 12px;
+                height: 12px;
+            }
+        }
+        .app {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="Unordered-list">
+            <li><a href="ino_gita.html">Home</a></li>
+            <li><a href="gita_contents.html">Contents</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="carousel-container" style="padding:20px;margin-top:40px;">
+        <!-- Bootstrap Carousel -->
+        <div id="flashcardCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First flashcard -->
+                <div class="carousel-item active">
+                    <h4>What is Bhagavad Gita?</h4>
+                    <p>The *Bhagavad Gita*, often referred to simply as the *Gita*, is a 700-verse Hindu scripture that is part of the ancient Indian epic, the *Mahabharata*. It is a philosophical dialogue between Prince Arjuna, a warrior, and Lord Krishna, his charioteer, set on the battlefield of Kurukshetra. <br><br> Krishna imparts profound spiritual wisdom, explaining the concepts of dharma (duty), karma (action), and moksha (liberation). The *Gita* teaches selfless action, focusing on the eternal soul, and outlines three paths to spiritual realization: karma yoga, bhakti yoga, and jnana yoga. <br><br> The *Bhagavad Gita* serves as a guide for living a balanced, ethical, and purposeful life.</p>
+                </div>
+                <!-- Second flashcard -->
+                <div class="carousel-item">
+                    <h4>Significance of Bhagavad Gita</h4>
+                    <p>The *Bhagavad Gita* holds immense significance as a spiritual and philosophical guide. It addresses fundamental questions about life, duty, and purpose, offering wisdom that transcends religious boundaries. <br><br> The *Gita* emphasizes selfless action, without attachment to outcomes, fostering personal growth. It presents three paths to spiritual realization: karma yoga, bhakti yoga, and jnana yoga. <br><br> Its teachings on the eternal soul (atman) encourage readers to focus on inner peace and spiritual growth, providing timeless wisdom for leading a purposeful life.</p>
+                </div>
+                <!-- Third flashcard -->
+                <div class="carousel-item">
+                    <h4>Gita teachings for today's challenges</h4>
+                    <p>The *Bhagavad Gita* offers invaluable teachings for addressing today’s challenges. Its principle of selfless action (karma yoga) is highly relevant in a competitive world. By focusing on effort rather than results, the *Gita* helps individuals manage stress and anxiety.<br><br> Its message of emotional detachment and inner balance promotes resilience and mental well-being. The teachings on dharma (duty) encourage individuals to align actions with purpose, fostering mindfulness, self-awareness, and spiritual growth.</p>
+                </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#flashcardCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#flashcardCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <a href="gita_contents.html" class="app">To discover the modern applications of Bhagavad Gita in different aspects of your life click here.</a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowLeft") {
+                window.location.href = "gita_home.html";
+            } else if (event.key === "ArrowRight") {
+                window.location.href = "gita_contents.html";
+            }
+        });
+    </script>
+</body>
+</html>
